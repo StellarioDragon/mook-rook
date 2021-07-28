@@ -1,0 +1,22 @@
+{
+  "name": "mook-rook",
+  "version": "1.0.0",
+  "description": "A slice-of-life RPG with unlimited characters.",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/StellarioDragon/mook-rook.git"
+  },
+  "keywords": [
+    "rpg"
+  ],
+  "author": "John LeMay",
+  "license": "CC0-1.0",
+  "bugs": {
+    "url": "https://github.com/StellarioDragon/mook-rook/issues"
+  },
+  "homepage": "https://github.com/StellarioDragon/mook-rook#readme"
+}
