@@ -2,9 +2,10 @@
   "name": "mook-rook",
   "version": "1.0.0",
   "description": "A slice-of-life RPG with unlimited characters.",
-  "main": "index.js",
+  "main": "./src/index.js",
   "scripts": {
-    "test": "test"
+    "test": "test",
+    "start": "electron ."
   },
   "repository": {
     "type": "git",
@@ -18,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/StellarioDragon/mook-rook/issues"
   },
-  "homepage": "https://github.com/StellarioDragon/mook-rook#readme"
+  "homepage": "https://github.com/StellarioDragon/mook-rook#readme",
+  "devDependencies": {
+    "electron": "^13.1.7"
+  }
 }
