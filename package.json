@@ -2,10 +2,11 @@
   "name": "mook-rook",
   "version": "1.0.0",
   "description": "A slice-of-life RPG with unlimited characters.",
-  "main": "./src/index.js",
   "scripts": {
-    "test": "test",
-    "start": "electron ."
+    "dev": "electron-webpack dev",
+    "compile": "electron-webpack",
+    "dist": "yarn compile && electron-builder",
+    "dist:dir": "yarn dist --dir -c.compression=store -c.mac.identity=null"
   },
   "repository": {
     "type": "git",
@@ -21,6 +22,18 @@
   },
   "homepage": "https://github.com/StellarioDragon/mook-rook#readme",
   "devDependencies": {
-    "electron": "^13.1.7"
+    "electron": "^13.1.7",
+    "electron-builder": "^22.4.1",
+    "electron-webpack": "^2.8.2",
+    "webpack": "~4.42.1"
+  },
+  "dependencies": {
+    "phaser": "^3.55.2"
+  },
+  "electronWebpack": {
+    "renderer": {
+      "sourceDirectory": "src/renderer",
+      "template": "src/renderer/index.html"
+    }
   }
 }
